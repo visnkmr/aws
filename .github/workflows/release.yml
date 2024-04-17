@@ -30,11 +30,9 @@ jobs:
       
     - name: Commit files
       run: |
-        rm -rf .git/
         git config --global user.email "12533753+visnkmr@users.noreply.github.com"
         git config --global user.name "fromghrunner"
         git config --global init.defaultBranch main 
-        git init
         git add .
         git commit -m "Latest awsdata added."
-        git push -f https://git:${{ secrets.TOKEN }}@github.com/visnkmr/aws main
+        git push https://git:${{ secrets.TOKEN }}@github.com/visnkmr/aws main
