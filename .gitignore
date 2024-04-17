@@ -1,0 +1,8 @@
+
+__pycache__/
+venv/
+checkmsg_pb2.py
+datacontent.pb
+parsed_data.json
+test
+url_cache.sqlite
